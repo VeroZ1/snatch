@@ -14,6 +14,8 @@ namespace Snatch
       string localPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
       string fullPath = $"{localPath}\\Snatch";
       string destination = $"{fullPath}\\Snatch.db";
+      
+      destination = $"{AppDomain.CurrentDomain.BaseDirectory}Snatch.db";
 
       Debug.WriteLine($"destination: {destination}");
 
